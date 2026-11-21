@@ -1,0 +1,64 @@
+World Money Roadmap market datasets
+https://github.com/worldmoneyroadmap/wmr-market-datasets
+Copyright 2026 World Money Roadmap (https://worldmoneyroadmap.com)
+
+The compilation in this repository is licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0). See LICENSE.
+
+Third-party sources and attribution
+-----------------------------------
+
+The files contain only (1) figures calculated by World Money Roadmap,
+(2) U.S. government works, and (3) calendar dates taken from official
+public notices. No third-party market price series is included.
+
+data/fed-rate-history.csv
+  Source: Board of Governors of the Federal Reserve System,
+  Open Market Operations table,
+  https://www.federalreserve.gov/monetarypolicy/openmarket.htm
+  Status: public domain (https://www.federalreserve.gov/disclaimer.htm).
+
+data/us-financials-sec.csv
+  Source: U.S. Securities and Exchange Commission, EDGAR XBRL
+  companyfacts API (10-Q and 10-K filings),
+  https://www.sec.gov/edgar/sec-api-documentation
+  Status: U.S. government work, public domain. Credit: "Source: U.S. SEC".
+
+data/market-dates.csv
+  Dates compiled from official public notices; the source_url column of
+  each row links to its notice:
+  - NYSE Group holiday and early-close announcement (ICE investor relations)
+  - Korea Astronomy and Space Science Institute, calendar of official
+    public holidays (Korean market holidays not yet announced by the Korea
+    Exchange are marked "expected")
+  - A Korean broker's guide page to the KOSPI 200 expiration rule
+    (second Thursday of the month)
+  - Board of Governors of the Federal Reserve System, FOMC meeting calendar
+    (public domain)
+  - U.S. Bureau of Labor Statistics release schedules for the Consumer
+    Price Index and the Employment Situation (public domain,
+    https://www.bls.gov/developers/termsOfService.htm)
+  - Cboe Global Markets, monthly options expiration rule
+  - State Street Global Advisors, SPDR ETF distribution schedule
+    (SPY, DIA, MDY)
+  Dates are facts; no text, tables or logos from these sources are copied.
+  NYSE, ICE, Korea Exchange, KOSPI, Cboe, SPDR and State Street are trademarks of their
+  respective owners and are named only to identify the source.
+
+data/trading-days.csv
+  Calculated by World Money Roadmap from the NYSE holiday calendar and
+  Korean market holidays (same sources as market-dates.csv).
+
+data/ai-lab-nav.csv, data/ai-lab-metrics.csv
+  Calculated by World Money Roadmap from paper (hypothetical) accounts in
+  the site's AI investing experiment. No real money and no personal
+  holdings. Only the benchmark's period return appears; no benchmark price
+  series is included.
+
+Not included
+------------
+Yahoo Finance, Naver, Nasdaq.com, KRX data services (including KRX OpenAPI
+and the public-data-portal price feed), FINRA, FRED copyrighted series,
+and IEX data are not used in this repository.
+
+Information only. Not investment advice.

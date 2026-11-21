@@ -1,0 +1,357 @@
+{
+  "language": "en",
+  "license": "Reuse allowed with attribution (CC BY 4.0); see license_url",
+  "license_url": "https://worldmoneyroadmap.com/en/content-use/#datasets",
+  "note": "For information only; not investment advice. CSV files are UTF-8 (with BOM); the first row holds column names, with units in the names. Files are regenerated at every site build.",
+  "publisher": "World Money Roadmap",
+  "publisher_url": "https://worldmoneyroadmap.com/en/",
+  "datasets": [
+    {
+      "as_of": "2026-11-21",
+      "citation": "World Money Roadmap, \"U.S. Federal Reserve target rate change history\", https://worldmoneyroadmap.com/data/csv/en/fed-rate-history.csv, as of 2026-11-21. Underlying data: Federal Reserve Board — Open Market Operations table.",
+      "columns": [
+        {
+          "description": "Date as printed in the Fed table (YYYY-MM-DD; often the day after the announcement)",
+          "name": "date_fed_table"
+        },
+        {
+          "description": "Change in basis points (1 bp = 0.01 percentage point), as printed",
+          "name": "change_bp"
+        },
+        {
+          "description": "Lower bound of target range (% per year; blank before Dec 16, 2008, when a single target was used)",
+          "name": "target_low_pct"
+        },
+        {
+          "description": "Upper bound of target range, or the single target (% per year)",
+          "name": "target_high_pct"
+        }
+      ],
+      "description": "Each date the FOMC changed the federal funds target rate (or range), the size of the change and the new level. Holds are not listed, as in the official table.",
+      "file": "fed-rate-history.csv",
+      "key": "fed-rates",
+      "license_url": "https://worldmoneyroadmap.com/en/content-use/#datasets",
+      "pages": [
+        "https://worldmoneyroadmap.com/en/market-dates/fed-rate-history/",
+        "https://worldmoneyroadmap.com/en/market-dates/bok-base-rate-history/"
+      ],
+      "rows": 42,
+      "source": "Federal Reserve Board — Open Market Operations table",
+      "source_url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+      "title": "U.S. Federal Reserve target rate change history",
+      "update_frequency": "When the Fed changes rates (after checking the official table)",
+      "url": "https://worldmoneyroadmap.com/data/csv/en/fed-rate-history.csv"
+    },
+    {
+      "as_of": "2026-11-20",
+      "citation": "World Money Roadmap, \"Market dates — holidays, early closes, FOMC, CPI, jobs report, options expiration, ex-dividend dates\", https://worldmoneyroadmap.com/data/csv/en/market-dates.csv, as of 2026-11-20. Underlying data: NYSE and Korea Exchange holiday notices, Federal Reserve FOMC calendar, U.S. Bureau of Labor Statistics release schedules, Cboe options calendar, State Street distribution schedule (source URL on every row).",
+      "columns": [
+        {
+          "description": "Date (YYYY-MM-DD, local date of that market)",
+          "name": "date"
+        },
+        {
+          "description": "New York time (HH:MM, when applicable)",
+          "name": "time_et"
+        },
+        {
+          "description": "Market (US or KR)",
+          "name": "market"
+        },
+        {
+          "description": "Event type code",
+          "name": "event_type"
+        },
+        {
+          "description": "Description",
+          "name": "event"
+        },
+        {
+          "description": "Reference month for CPI and jobs data (YYYY-MM)",
+          "name": "reference_period"
+        },
+        {
+          "description": "official, expected, tentative or calculated (rule-based)",
+          "name": "status"
+        },
+        {
+          "description": "Note",
+          "name": "note"
+        },
+        {
+          "description": "Source URL",
+          "name": "source_url"
+        }
+      ],
+      "description": "U.S. and Korean market holidays and early closes, FOMC decision days, U.S. CPI and jobs-report release dates, U.S. monthly options and KOSPI 200 futures and options expirations, and SPDR ETF (SPY, DIA, MDY) ex-dividend dates in one table. Status = official, expected, tentative or calculated (rule-based).",
+      "file": "market-dates.csv",
+      "key": "market-dates",
+      "license_url": "https://worldmoneyroadmap.com/en/content-use/#datasets",
+      "pages": [
+        "https://worldmoneyroadmap.com/en/market-dates/",
+        "https://worldmoneyroadmap.com/en/market-dates/stock-market-holidays/",
+        "https://worldmoneyroadmap.com/en/market-dates/fomc-meeting-schedule/",
+        "https://worldmoneyroadmap.com/en/market-dates/cpi-release-dates/",
+        "https://worldmoneyroadmap.com/en/market-dates/jobs-report-release-dates/",
+        "https://worldmoneyroadmap.com/en/market-dates/options-expiration-dates/",
+        "https://worldmoneyroadmap.com/en/market-dates/spy-dividend-dates/",
+        "https://worldmoneyroadmap.com/en/market-dates/trading-days-left/",
+        "https://worldmoneyroadmap.com/en/market-dates/is-the-stock-market-open-today/",
+        "https://worldmoneyroadmap.com/en/market-dates/stock-market-hours/"
+      ],
+      "rows": 150,
+      "source": "NYSE and Korea Exchange holiday notices, Federal Reserve FOMC calendar, U.S. Bureau of Labor Statistics release schedules, Cboe options calendar, State Street distribution schedule (source URL on every row)",
+      "source_url": "",
+      "title": "Market dates — holidays, early closes, FOMC, CPI, jobs report, options expiration, ex-dividend dates",
+      "update_frequency": "When official schedules are published or changed",
+      "url": "https://worldmoneyroadmap.com/data/csv/en/market-dates.csv"
+    },
+    {
+      "as_of": "2026-11-20",
+      "citation": "World Money Roadmap, \"Trading days per month — U.S. (NYSE and Nasdaq) and Korea (KOSPI and KOSDAQ)\", https://worldmoneyroadmap.com/data/csv/en/trading-days.csv, as of 2026-11-20. Underlying data: WMR calculation from the NYSE holiday calendar (Dec 23, 2025) and Korea Exchange holidays / official public holidays.",
+      "columns": [
+        {
+          "description": "Year",
+          "name": "year"
+        },
+        {
+          "description": "Month (01–12; all = full-year total)",
+          "name": "month"
+        },
+        {
+          "description": "U.S. trading days (days)",
+          "name": "us_trading_days"
+        },
+        {
+          "description": "Of which U.S. early-close days (days)",
+          "name": "us_early_close_days"
+        },
+        {
+          "description": "Korea trading days (days; blank when the holiday list for that year is incomplete)",
+          "name": "kr_trading_days"
+        },
+        {
+          "description": "Status of the Korean figure (official or expected)",
+          "name": "kr_status"
+        }
+      ],
+      "description": "Trading days per month after removing weekends and market holidays (WMR calculation). U.S. early-close days count as trading days. Korean figures are expected until the Korea Exchange announces its holidays.",
+      "file": "trading-days.csv",
+      "key": "trading-days",
+      "license_url": "https://worldmoneyroadmap.com/en/content-use/#datasets",
+      "pages": [
+        "https://worldmoneyroadmap.com/en/market-dates/trading-days-left/",
+        "https://worldmoneyroadmap.com/en/market-dates/stock-market-holidays/"
+      ],
+      "rows": 39,
+      "source": "WMR calculation from the NYSE holiday calendar (Dec 23, 2025) and Korea Exchange holidays / official public holidays",
+      "source_url": "",
+      "title": "Trading days per month — U.S. (NYSE and Nasdaq) and Korea (KOSPI and KOSDAQ)",
+      "update_frequency": "When the holiday source changes",
+      "url": "https://worldmoneyroadmap.com/data/csv/en/trading-days.csv"
+    },
+    {
+      "as_of": "2026-11-20",
+      "citation": "World Money Roadmap, \"U.S. company quarterly and annual financials (SEC XBRL) — revenue, operating income, net income, diluted EPS\", https://worldmoneyroadmap.com/data/csv/en/us-financials-sec.csv, as of 2026-11-20. Underlying data: U.S. Securities and Exchange Commission (SEC) EDGAR XBRL companyfacts.",
+      "columns": [
+        {
+          "description": "Ticker",
+          "name": "ticker"
+        },
+        {
+          "description": "SEC registrant name",
+          "name": "sec_registrant"
+        },
+        {
+          "description": "SEC CIK",
+          "name": "sec_cik"
+        },
+        {
+          "description": "Q = quarter, FY = fiscal year",
+          "name": "period_type"
+        },
+        {
+          "description": "Fiscal year",
+          "name": "fiscal_year"
+        },
+        {
+          "description": "Fiscal quarter (1–4; blank for annual)",
+          "name": "fiscal_quarter"
+        },
+        {
+          "description": "Period end date",
+          "name": "period_end"
+        },
+        {
+          "description": "Revenue (US$)",
+          "name": "revenue_usd"
+        },
+        {
+          "description": "Operating income (US$; blank if not reported)",
+          "name": "operating_income_usd"
+        },
+        {
+          "description": "Net income (US$)",
+          "name": "net_income_usd"
+        },
+        {
+          "description": "Diluted EPS (US$ per share)",
+          "name": "eps_diluted_usd"
+        },
+        {
+          "description": "1 = fourth quarter derived from the annual total",
+          "name": "q4_derived"
+        }
+      ],
+      "description": "10-Q and 10-K XBRL values filed with the SEC by the U.S. companies covered by WMR stock pages (fiscal-year basis). Fourth-quarter values are the annual total minus the first three quarters (q4_derived = 1; EPS not derived). Page tables round these values to billions or millions.",
+      "file": "us-financials-sec.csv",
+      "key": "us-fin",
+      "license_url": "https://worldmoneyroadmap.com/en/content-use/#datasets",
+      "pages": [],
+      "rows": 6026,
+      "source": "U.S. Securities and Exchange Commission (SEC) EDGAR XBRL companyfacts",
+      "source_url": "https://www.sec.gov/edgar/sec-api-documentation",
+      "title": "U.S. company quarterly and annual financials (SEC XBRL) — revenue, operating income, net income, diluted EPS",
+      "update_frequency": "When new 10-Q or 10-K filings appear (automated)",
+      "url": "https://worldmoneyroadmap.com/data/csv/en/us-financials-sec.csv"
+    },
+    {
+      "as_of": "2026-11-20",
+      "citation": "World Money Roadmap, \"AI investing experiment — daily paper-account value and cumulative return\", https://worldmoneyroadmap.com/data/csv/en/ai-lab-nav.csv, as of 2026-11-20. Underlying data: WMR calculation (AI experiment execution engine, nav.json).",
+      "columns": [
+        {
+          "description": "Date (YYYY-MM-DD)",
+          "name": "date"
+        },
+        {
+          "description": "Account code",
+          "name": "account"
+        },
+        {
+          "description": "Account name",
+          "name": "account_name"
+        },
+        {
+          "description": "Account value (US$, started at $100,000)",
+          "name": "nav_usd"
+        },
+        {
+          "description": "Cumulative return since start (%, two decimals as on the page)",
+          "name": "cum_return_pct"
+        }
+      ],
+      "description": "Daily value and cumulative return since start of the paper accounts run only by AI. Hypothetical, not real trades, and not investment advice. Daily benchmark index values (third-party prices) are not included.",
+      "file": "ai-lab-nav.csv",
+      "key": "ai-lab-nav",
+      "license_url": "https://worldmoneyroadmap.com/en/content-use/#datasets",
+      "pages": [
+        "https://worldmoneyroadmap.com/en/ai-lab/"
+      ],
+      "rows": 65,
+      "source": "WMR calculation (AI experiment execution engine, nav.json)",
+      "source_url": "",
+      "title": "AI investing experiment — daily paper-account value and cumulative return",
+      "update_frequency": "After each market close",
+      "url": "https://worldmoneyroadmap.com/data/csv/en/ai-lab-nav.csv"
+    },
+    {
+      "as_of": "2026-11-20",
+      "citation": "World Money Roadmap, \"AI investing experiment — account metrics (vs. benchmark, risk, costs)\", https://worldmoneyroadmap.com/data/csv/en/ai-lab-metrics.csv, as of 2026-11-20. Underlying data: WMR calculation (ai_lab_metrics.py, metrics.json).",
+      "columns": [
+        {
+          "description": "Account code",
+          "name": "account"
+        },
+        {
+          "description": "Account name",
+          "name": "account_name"
+        },
+        {
+          "description": "Start date",
+          "name": "start_date"
+        },
+        {
+          "description": "As-of date",
+          "name": "as_of"
+        },
+        {
+          "description": "Trading days run (days)",
+          "name": "trading_days"
+        },
+        {
+          "description": "Cumulative return (%)",
+          "name": "cum_return_pct"
+        },
+        {
+          "description": "Benchmark code (spx = S&P 500, btc = Bitcoin, mix = ACWI and AGG blend)",
+          "name": "benchmark"
+        },
+        {
+          "description": "Benchmark cumulative return over the same period (%)",
+          "name": "benchmark_cum_return_pct"
+        },
+        {
+          "description": "Difference vs. benchmark (percentage points)",
+          "name": "excess_return_pp"
+        },
+        {
+          "description": "Maximum drawdown (%)",
+          "name": "max_drawdown_pct"
+        },
+        {
+          "description": "Annualized volatility (%)",
+          "name": "volatility_ann_pct"
+        },
+        {
+          "description": "Sharpe ratio (risk-free rate 0%)",
+          "name": "sharpe_ratio"
+        },
+        {
+          "description": "Sortino ratio",
+          "name": "sortino_ratio"
+        },
+        {
+          "description": "Information ratio",
+          "name": "information_ratio"
+        },
+        {
+          "description": "Beta vs. benchmark",
+          "name": "beta"
+        },
+        {
+          "description": "Number of trades",
+          "name": "trades"
+        },
+        {
+          "description": "Closed trades",
+          "name": "closed_trades"
+        },
+        {
+          "description": "Share of closed trades with a gain (%)",
+          "name": "win_rate_pct"
+        },
+        {
+          "description": "Cumulative trading costs (% of starting value)",
+          "name": "costs_pct_of_start"
+        },
+        {
+          "description": "Verdict code (e.g. too_early)",
+          "name": "verdict"
+        }
+      ],
+      "description": "For each paper account: cumulative return, the benchmark's cumulative return over the same period and the gap, maximum drawdown, volatility, Sharpe, Sortino and information ratios, beta, trade count and costs, as calculated by WMR. With a short history the verdict is too_early. Not investment advice.",
+      "file": "ai-lab-metrics.csv",
+      "key": "ai-lab-metrics",
+      "license_url": "https://worldmoneyroadmap.com/en/content-use/#datasets",
+      "pages": [
+        "https://worldmoneyroadmap.com/en/ai-lab/"
+      ],
+      "rows": 6,
+      "source": "WMR calculation (ai_lab_metrics.py, metrics.json)",
+      "source_url": "",
+      "title": "AI investing experiment — account metrics (vs. benchmark, risk, costs)",
+      "update_frequency": "After each market close",
+      "url": "https://worldmoneyroadmap.com/data/csv/en/ai-lab-metrics.csv"
+    }
+  ]
+}

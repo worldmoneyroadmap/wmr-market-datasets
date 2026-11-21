@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use these datasets, please cite them as below."
+type: dataset
+title: "World Money Roadmap market datasets"
+abstract: >-
+  CSV datasets from the World Money Roadmap market data site: U.S. Federal
+  Reserve target rate changes, U.S. and Korean market dates, trading days per
+  month, quarterly and annual U.S. company financials from SEC EDGAR XBRL, and
+  the daily value and metrics of the site's AI paper-trading accounts.
+authors:
+  - name: "World Money Roadmap"
+    website: "https://worldmoneyroadmap.com"
+license: CC-BY-4.0
+repository-code: "https://github.com/worldmoneyroadmap/wmr-market-datasets"
+repository: "https://huggingface.co/datasets/worldmoneyroadmap/wmr-market-datasets"
+url: "https://worldmoneyroadmap.com/en/data/"
+date-released: "2026-11-21"
+keywords:
+  - finance
+  - economics
+  - stock market
+  - interest rates
+  - SEC EDGAR
+  - market calendar
