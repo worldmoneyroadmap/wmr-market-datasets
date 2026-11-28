@@ -1,4 +1,5 @@
 {
+  "generated_at": "2026-11-28T01:54:25Z",
   "language": "en",
   "license": "Reuse allowed with attribution (CC BY 4.0); see license_url",
   "license_url": "https://worldmoneyroadmap.com/en/content-use/#datasets",
@@ -36,15 +37,17 @@
         "https://worldmoneyroadmap.com/en/market-dates/bok-base-rate-history/"
       ],
       "rows": 42,
+      "sha256": "f77509be0bc0d825fb3adad9b4969607c2144fa2f7f1a5c4304a8e96ff2e0577",
       "source": "Federal Reserve Board — Open Market Operations table",
       "source_url": "https://www.federalreserve.gov/monetarypolicy/openmarket.htm",
+      "temporal_coverage": "2007-09-18/2026-09-17",
       "title": "U.S. Federal Reserve target rate change history",
       "update_frequency": "When the Fed changes rates (after checking the official table)",
       "url": "https://worldmoneyroadmap.com/data/csv/en/fed-rate-history.csv"
     },
     {
       "as_of": "2026-11-20",
-      "citation": "World Money Roadmap, \"Market dates — holidays, early closes, FOMC, CPI, jobs report, options expiration, ex-dividend dates\", https://worldmoneyroadmap.com/data/csv/en/market-dates.csv, as of 2026-11-20. Underlying data: NYSE and Korea Exchange holiday notices, Federal Reserve FOMC calendar, U.S. Bureau of Labor Statistics release schedules, Cboe options calendar, State Street distribution schedule (source URL on every row).",
+      "citation": "World Money Roadmap, \"Market dates — holidays, early closes, FOMC, CPI, jobs report, options expiration, ex-dividend dates\", https://worldmoneyroadmap.com/data/csv/en/market-dates.csv, as of 2026-11-20. Underlying data: NYSE holiday and early-close notice (ICE investor relations), Federal Reserve FOMC calendar, U.S. Bureau of Labor Statistics release schedules, Cboe options calendar, State Street SPDR distribution schedule, Korea Astronomy and Space Science Institute calendar of official public holidays (Korean holidays not yet announced by the Korea Exchange are expected), and a Korean broker guide to the KOSPI 200 expiration rule (second Thursday) (source URL on every row).",
       "columns": [
         {
           "description": "Date (YYYY-MM-DD, local date of that market)",
@@ -100,8 +103,10 @@
         "https://worldmoneyroadmap.com/en/market-dates/stock-market-hours/"
       ],
       "rows": 150,
-      "source": "NYSE and Korea Exchange holiday notices, Federal Reserve FOMC calendar, U.S. Bureau of Labor Statistics release schedules, Cboe options calendar, State Street distribution schedule (source URL on every row)",
+      "sha256": "b88967adfebbdb38b85160566c573bdbfa09cc9792c1dc0f5c06251b9844b175",
+      "source": "NYSE holiday and early-close notice (ICE investor relations), Federal Reserve FOMC calendar, U.S. Bureau of Labor Statistics release schedules, Cboe options calendar, State Street SPDR distribution schedule, Korea Astronomy and Space Science Institute calendar of official public holidays (Korean holidays not yet announced by the Korea Exchange are expected), and a Korean broker guide to the KOSPI 200 expiration rule (second Thursday) (source URL on every row)",
       "source_url": "",
+      "temporal_coverage": "2026-01-01/2028-12-25",
       "title": "Market dates — holidays, early closes, FOMC, CPI, jobs report, options expiration, ex-dividend dates",
       "update_frequency": "When official schedules are published or changed",
       "url": "https://worldmoneyroadmap.com/data/csv/en/market-dates.csv"
@@ -144,15 +149,17 @@
         "https://worldmoneyroadmap.com/en/market-dates/stock-market-holidays/"
       ],
       "rows": 39,
+      "sha256": "6e17984433d444787bf5a466cdd03db594e0b3dc905c30a21c9b4b458904ca82",
       "source": "WMR calculation from the NYSE holiday calendar (Dec 23, 2025) and Korea Exchange holidays / official public holidays",
       "source_url": "",
+      "temporal_coverage": "",
       "title": "Trading days per month — U.S. (NYSE and Nasdaq) and Korea (KOSPI and KOSDAQ)",
       "update_frequency": "When the holiday source changes",
       "url": "https://worldmoneyroadmap.com/data/csv/en/trading-days.csv"
     },
     {
-      "as_of": "2026-11-20",
-      "citation": "World Money Roadmap, \"U.S. company quarterly and annual financials (SEC XBRL) — revenue, operating income, net income, diluted EPS\", https://worldmoneyroadmap.com/data/csv/en/us-financials-sec.csv, as of 2026-11-20. Underlying data: U.S. Securities and Exchange Commission (SEC) EDGAR XBRL companyfacts.",
+      "as_of": "2026-11-25",
+      "citation": "World Money Roadmap, \"U.S. company quarterly and annual financials (SEC XBRL) — revenue, operating income, net income, diluted EPS\", https://worldmoneyroadmap.com/data/csv/en/us-financials-sec.csv, as of 2026-11-25. Underlying data: U.S. Securities and Exchange Commission (SEC) EDGAR XBRL companyfacts.",
       "columns": [
         {
           "description": "Ticker",
@@ -208,16 +215,18 @@
       "key": "us-fin",
       "license_url": "https://worldmoneyroadmap.com/en/content-use/#datasets",
       "pages": [],
-      "rows": 6026,
+      "rows": 6034,
+      "sha256": "f20711a5c0d676ddb6ee763dca8ba316203bf7ed37acb61a3babefc3f89f7a29",
       "source": "U.S. Securities and Exchange Commission (SEC) EDGAR XBRL companyfacts",
       "source_url": "https://www.sec.gov/edgar/sec-api-documentation",
+      "temporal_coverage": "2022-06-30/2026-11-01",
       "title": "U.S. company quarterly and annual financials (SEC XBRL) — revenue, operating income, net income, diluted EPS",
       "update_frequency": "When new 10-Q or 10-K filings appear (automated)",
       "url": "https://worldmoneyroadmap.com/data/csv/en/us-financials-sec.csv"
     },
     {
-      "as_of": "2026-11-20",
-      "citation": "World Money Roadmap, \"AI investing experiment — daily paper-account value and cumulative return\", https://worldmoneyroadmap.com/data/csv/en/ai-lab-nav.csv, as of 2026-11-20. Underlying data: WMR calculation (AI experiment execution engine, nav.json).",
+      "as_of": "2026-11-27",
+      "citation": "World Money Roadmap, \"AI investing experiment — daily paper-account value and cumulative return\", https://worldmoneyroadmap.com/data/csv/en/ai-lab-nav.csv, as of 2026-11-27. Underlying data: WMR calculation (AI experiment execution engine).",
       "columns": [
         {
           "description": "Date (YYYY-MM-DD)",
@@ -247,16 +256,18 @@
       "pages": [
         "https://worldmoneyroadmap.com/en/ai-lab/"
       ],
-      "rows": 65,
-      "source": "WMR calculation (AI experiment execution engine, nav.json)",
+      "rows": 97,
+      "sha256": "0f61f6c1000ec616dee510805a033c46bc0b74e2a7ba6a0c03fbeac373899615",
+      "source": "WMR calculation (AI experiment execution engine)",
       "source_url": "",
+      "temporal_coverage": "2026-11-09/2026-11-27",
       "title": "AI investing experiment — daily paper-account value and cumulative return",
       "update_frequency": "After each market close",
       "url": "https://worldmoneyroadmap.com/data/csv/en/ai-lab-nav.csv"
     },
     {
-      "as_of": "2026-11-20",
-      "citation": "World Money Roadmap, \"AI investing experiment — account metrics (vs. benchmark, risk, costs)\", https://worldmoneyroadmap.com/data/csv/en/ai-lab-metrics.csv, as of 2026-11-20. Underlying data: WMR calculation (ai_lab_metrics.py, metrics.json).",
+      "as_of": "2026-11-27",
+      "citation": "World Money Roadmap, \"AI investing experiment — account metrics (vs. benchmark, risk, costs)\", https://worldmoneyroadmap.com/data/csv/en/ai-lab-metrics.csv, as of 2026-11-27. Underlying data: WMR calculation (AI experiment performance metrics).",
       "columns": [
         {
           "description": "Account code",
@@ -347,8 +358,10 @@
         "https://worldmoneyroadmap.com/en/ai-lab/"
       ],
       "rows": 6,
-      "source": "WMR calculation (ai_lab_metrics.py, metrics.json)",
+      "sha256": "6e25af64fb5098b02a264102a6f4086c7fe63156694bfc1da435475eec1f0f58",
+      "source": "WMR calculation (AI experiment performance metrics)",
       "source_url": "",
+      "temporal_coverage": "2026-11-09",
       "title": "AI investing experiment — account metrics (vs. benchmark, risk, costs)",
       "update_frequency": "After each market close",
       "url": "https://worldmoneyroadmap.com/data/csv/en/ai-lab-metrics.csv"
